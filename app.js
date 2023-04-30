@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const session = require("express-session");
 const passport = require("passport");
 const path=require('path')
-
+const port = process.env.PORT || 3000
 //it has been done
 const tasks = require("./server/routes/tasks");
 const previousTasks=require("./server/routes/previous")
@@ -86,7 +86,7 @@ app.get("*",(req,res,next)=>{
     app.use(errorHandlerMid)
  conn.then((value)=>{
  
-  app.listen(env.port, () => {
+  app.listen(port, () => {
   console.log("server is running");
 })}).catch((err)=>{
   console.log(err)
