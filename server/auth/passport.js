@@ -6,7 +6,7 @@ require('dotenv').config()
 passport.use(new passportGoogle({
     clientID:process.env.CLIENT_ID,
     clientSecret:process.env.CLIENT_SECRET,
-    callbackURL:"http://localhost:4000/google/callback",
+    callbackURL:"https://task-tracker-cw0i.onrender.com/google/callback",
     passReqToCallback:true
 },async function (request,accessToken,refreshToken,profile,done){
   let result= await User.findOneAndUpdate(
