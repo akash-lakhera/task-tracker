@@ -53,7 +53,7 @@ function Task(props) {
 
           <div>
             <div className={!props.date?"metric-div":"prev-task-metric-div"}>
-              {element.metrics[0].name.toUpperCase()}:{element.metrics[0].currentValue}
+              {element.metrics[0].name.toUpperCase()+" : "}{element.metrics[0].currentValue}
             </div> 
             {props.date?'':<div><div className="check-div">
               <label style={{cursor:"pointer"}}
