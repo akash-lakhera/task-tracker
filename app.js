@@ -88,6 +88,7 @@ app.get("*",(req,res,next)=>{
  
   app.listen(port, () => {
   console.log("server is running");
+  console.log(process.env.PUBLIC_URL+"boi")
 })}).catch((err)=>{
   console.log(err)
 })  
