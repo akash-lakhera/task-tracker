@@ -18,8 +18,7 @@ function NavigationTop() {
 
     if (
       loginRef &&
-      !loginRef.current.contains(e.target) &&
-      loginRef.current.parentNode !== e.target
+      !loginRef.current.parentNode.contains(e.target)
     ) {
       setProfileVisible(false);
     }
@@ -36,7 +35,7 @@ function NavigationTop() {
   };
   useEffect(() => {
     document.addEventListener("mousedown", detectOutsideClick);
-  });
+  },[]);
   let classes = "profile-dropdown  bg-clr-1 ";
   if (!profileVisible) {
     classes = "profile-dropdown  profile-dropdown-scale";
@@ -59,8 +58,8 @@ function NavigationTop() {
       
       </div>
       <div className={navClasses}>
-      <div className="profile bg-clr-2" onClick={showProfile}>
-       <div className="fs-head-1 profile-letter txt-clr-1">
+      <div className="profile bg-clr-2" >
+       <div className="fs-head-1 profile-letter txt-clr-1 " onClick={showProfile}>
         {name?name.charAt(0).toUpperCase():null}
         </div> 
             <div

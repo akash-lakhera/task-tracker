@@ -212,6 +212,7 @@ a {
 }
 .profile-letter{
   text-align: center;
+  line-height: 48px;
 }
 .profile-dropdown {
   position: absolute;
@@ -260,7 +261,7 @@ a {
   }
   .nav-top-elem-wrapper {
     display: none;
-    line-height: 40px;
+    line-height: 48px;
     margin: 0;
     background-color: var(--clr-2);
   }
