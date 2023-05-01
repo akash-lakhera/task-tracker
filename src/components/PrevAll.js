@@ -47,7 +47,7 @@ function PrevAll(props) {
   }
   return (
     <div className="home-container">
-      <h2 className="home-heading-top">Primary Tasks</h2>
+      <h2 className="home-heading-top txt-clr-4 fs-head-1 fw-1">Primary Tasks</h2>
       <ul className="task-elements-ul">{tasks}</ul>
      
     </div>

@@ -59,6 +59,18 @@ function ChartBuilder(props) {
               display:true,
               text:title
             }
+          },
+          scales: {
+            x: {
+              grid: {
+                display: false,
+              }
+            },
+            y: {
+              grid: {
+                display: false
+              }
+            },
           }
         }
       }

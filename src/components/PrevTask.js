@@ -161,10 +161,10 @@ function PrevTask(props) {
   }, [task],props.rerender);
   return (
     <div className="task-route-container">
-     <div className="flex-R-SB"> <h2 className="task-route-heading-top">{str}</h2> <h2 className="task-route-heading-top">{searchParams.get("date")}</h2></div> 
+     <div className="flex-R-SB"> <h2 className="task-route-heading-top txt-clr-4 fw-1 fs-head-1">{str}</h2> <h2 className="task-route-heading-top txt-clr-4 fs-head-1 fw-1">{searchParams.get("date")}</h2></div> 
       <Link to={`/previoustask/${task}/?date=${searchParams.get("date")}`}>
       <div className="previous">
-        <button className="add-new-metric prev">Previous Data</button>
+        <button className="button-1 prev">Previous Data</button>
         </div>
       </Link>
       <div className="flex">
