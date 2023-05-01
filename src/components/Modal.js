@@ -90,7 +90,7 @@ function Modal(props) {
             {
               name: temp_name,
               metrics: [
-                { name: temp_metric, requiredValue: 0, currentValue: 0 },
+                { name: temp_metric, currentValue: 0 },
               ],
             },
           ],

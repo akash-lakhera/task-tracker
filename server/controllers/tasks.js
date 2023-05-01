@@ -76,7 +76,7 @@ const createMainTask = wrapper(async (req, res, next) => {
         $push: {
           "dates.$[d].tasks": {
             name: name,
-            metrics: [{ name: metric, requiredValue: 0, currentValue: 0 }],
+            metrics: [{ name: metric, currentValue: 0 }],
             completed: false,
             days: days,
           },
@@ -91,7 +91,7 @@ const createMainTask = wrapper(async (req, res, next) => {
     if (element) {
       newDays["newDays." + element] = {
         name: name,
-        metrics: [{ name: metric, requiredValue: 0, currentValue: 0 }],
+        metrics: [{ name: metric, currentValue: 0 }],
         completed: false,
         days: days,
       };
@@ -318,7 +318,7 @@ const createInnerTask = wrapper(async (req, res, next) => {
         $push: {
           [update]: {
             name: name,
-            metrics: [{ name: metric, requiredValue: 0, currentValue: 0 }],
+            metrics: [{ name: metric, currentValue: 0 }],
             completed: false,
             days: days,
           },
@@ -332,7 +332,7 @@ const createInnerTask = wrapper(async (req, res, next) => {
     if (element) {
       newDays["newDays." + element + nextDayUpdate] = {
         name: name,
-        metrics: [{ name: metric, requiredValue: 0, currentValue: 0 }],
+        metrics: [{ name: metric, currentValue: 0 }],
         completed: false,
         days: days,
       };

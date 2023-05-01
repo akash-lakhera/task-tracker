@@ -56,7 +56,7 @@ function Task(props) {
               {element.metrics[0].name.toUpperCase()}:{element.metrics[0].currentValue}
             </div> 
             {props.date?'':<div><div className="check-div">
-              <label
+              <label style={{cursor:"pointer"}}
                 onChange={(e) => {
                   e.stopPropagation();
                 }}

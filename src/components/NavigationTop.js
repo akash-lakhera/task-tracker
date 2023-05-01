@@ -25,14 +25,14 @@ function NavigationTop() {
     }
   };
   const logoutHandler = () => {
-    fetch("http://localhost:4000/logout", {
+    fetch("/logout", {
       method: "POST",
       headers: {
         Accept: "application/json",
         "Content-Type": "application/json",
       },
       body: JSON.stringify({}),
-    }).then(window.location.replace("http://localhost:4000/login"));
+    }).then(window.location.replace("/login"));
   };
   useEffect(() => {
     document.addEventListener("mousedown", detectOutsideClick);

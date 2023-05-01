@@ -427,6 +427,7 @@ a {
   width: 150px;
   height: 60px;
   margin: auto;
+  cursor: pointer;
 }
 .modal-close-button {
   margin-left: auto;
@@ -548,6 +549,9 @@ li {
   justify-content: space-between;
   padding-left:5px;
   margin-bottom: 20px;
+}
+.info-row-completed{
+  cursor: pointer;
 }
 .prev {
   border: none;

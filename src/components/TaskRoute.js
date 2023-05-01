@@ -213,7 +213,7 @@ function TaskRoute(props) {
       <div className="flex">
         <div className="info-container bg-clr-1">
           <div className="info-row-header">
-            <div className="info-row-completed fs-head-2">
+            <label className="info-row-completed fs-head-2">
               Completed{" "}
               <input
                 type="checkbox"
@@ -221,7 +221,7 @@ function TaskRoute(props) {
                 className="markCompleted"
                 checked={data.completed || false}
               />
-            </div>
+            </label>
             <div>
               <button className="button-1" onClick={addNewMetric}>
                 + Add Metric
