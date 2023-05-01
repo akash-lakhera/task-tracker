@@ -169,7 +169,7 @@ function PrevTask(props) {
       </Link>
       <div className="flex">
 
-      <div className="info-container">
+      <div className="info-container bg-clr-1">
       <div className="info">
           
           <div className="info-child-header flex-R-C">Target Achieved</div>
@@ -183,7 +183,7 @@ function PrevTask(props) {
           <button onClick={submitNewMetric}>Submit</button>
         </div>:''}
       </div>
-      <div className="last-seven-days"><ChartBuilder task={task} date={searchParams.get("date")?searchParams.get("date"):null}/>
+      <div className="last-seven-days bg-clr-1"><ChartBuilder task={task} date={searchParams.get("date")?searchParams.get("date"):null}/>
      </div>
           </div>
       <ul className="task-elements-ul">{tasks}</ul>

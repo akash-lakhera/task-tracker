@@ -68,6 +68,18 @@ function PreviousData(props) {
   const options = (title) => {
     // Function to create options for the charts
     return {
+      scales: {
+        x: {
+          grid: {
+            display: false,
+          }
+        },
+        y: {
+          grid: {
+            display: false
+          }
+        },
+      },
       responsive: true,
       pointRadius: 3,
       aspectRatio: 2.8,
