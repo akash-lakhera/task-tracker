@@ -1,2 +1,2 @@
 # task-tracker
-An application to track daily progre
+An application to track daily progress
