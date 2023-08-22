@@ -10,3 +10,5 @@ You can create subtasks for it using the same process as above.
 example inside study children can be "web development project" and "Learning French"
 Once you have created your entire weekly schedule the tasks will be automatically created on the designated days.
 You have to enter the daily values for the tasks to save it.
+
+# Find the link to live website on top right or use this link https://task-tracker-cw0i.onrender.com/
